@@ -7,7 +7,7 @@
  *
  */
 function config($stateProvider, $urlRouterProvider) {
-    $urlRouterProvider.otherwise("/landing");
+    $urlRouterProvider.otherwise("/inicio");
 
     $stateProvider
 
@@ -18,10 +18,10 @@ function config($stateProvider, $urlRouterProvider) {
             templateUrl: "views/common/content.html"
 
         })
-        .state('landing', {
-            url: "/landing",
+        .state('inicio', {
+            url: "/inicio",
             templateUrl: "views/landing.html",
-            data: { pageTitle: 'Landing page', specialClass: 'landing-page' }
+            data: { pageTitle: 'inicio', specialClass: 'landing-page' }
         })
 }
 angular
