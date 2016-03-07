@@ -147,7 +147,20 @@ function iboxToolsFullScreen($timeout) {
     };
 }
 
-
+/**
+ * landingScrollspy - Directive for scrollspy in landing page
+ */
+function landingScrollspy(){
+    return {
+        restrict: 'A',
+        link: function (scope, element, attrs) {
+            element.scrollspy({
+                target: '.navbar-fixed-top',
+                offset: 80
+            });
+        }
+    }
+}
 
 /**
  *
@@ -159,4 +172,5 @@ angular
     .directive('sideNavigation', sideNavigation)
     .directive('iboxTools', iboxTools)
     .directive('minimalizaSidebar', minimalizaSidebar)
+    .directive('landingScrollspy',landingScrollspy)
     .directive('iboxToolsFullScreen', iboxToolsFullScreen);
