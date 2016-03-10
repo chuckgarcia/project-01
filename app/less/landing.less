@@ -93,7 +93,7 @@ body.landing-page {
   transition: all 0.3s ease-in-out 0s;
 }
 .landing-page .navbar-default .nav li a {
-  color: #fff;
+  color: #9d9d9d;
   font-family: 'Open Sans', helvetica, arial, sans-serif;
   font-weight: 700;
   letter-spacing: 1px;
@@ -107,12 +107,13 @@ body.landing-page {
 .landing-page .navbar-default .navbar-nav > .active > a,
 .landing-page .navbar-default .navbar-nav > .active > a:hover {
   background: transparent;
-  color: #fff;
-  border-top: 6px solid @bluemedio;
+  color: @blueoscuro;
+  border-top: 6px solid @blueclaro;
 }
+//////////////efecto de seleccion de menu
 .landing-page .navbar-default .navbar-nav > li > a:hover,
 .landing-page .navbar-default .navbar-nav > li > a:focus {
-  color: @bluemedio;;
+  color: @blueclaro;
   background: inherit;
 }
 .landing-page .navbar-default .navbar-nav > .active > a:focus {
@@ -121,7 +122,7 @@ body.landing-page {
 }
 .landing-page .navbar-default .navbar-nav > .active > a:focus {
   background: transparent;
-  color: #ffffff;
+  color: @blueoscuro;
 }
 .landing-page .navbar-default.navbar-scroll .navbar-nav > .active > a:focus {
   background: transparent;
@@ -129,7 +130,7 @@ body.landing-page {
 }
 .landing-page .navbar-default .navbar-brand:hover,
 .landing-page .navbar-default .navbar-brand:focus {
-  background: #179d82;
+  background: @blueclaro;
   color: #fff;
 }
 .landing-page .navbar-default .navbar-brand {
@@ -187,10 +188,13 @@ body.landing-page {
   width: 100%;
 }
 .landing-page .header-back.one {
-  background: url('../img/landing/header_one.jpg') 50% 0 no-repeat;
+  background: url('../img/landing/Btobheader_one.jpg') 50% 0 no-repeat;
 }
 .landing-page .header-back.two {
-  background: url('../img/landing/header_two.jpg') 50% 0 no-repeat;
+  background: url('../img/landing/Btob_Apps_header_two.jpg') 50% 0 no-repeat;
+}
+.landing-page .header-back.three {
+  background: url('../img/landing/Btob_Exito_header_three.jpg') 50% 0 no-repeat;
 }
 .landing-page .carousel {
   height: 470px;
@@ -245,6 +249,15 @@ body.landing-page {
 }
 .landing-page .carousel-caption {
   position: absolute;
+  /* top: 100px;
+   left: 0;
+   bottom: auto;
+   right: auto;
+   text-align: left;
+ }
+ .landing-page .carousel-caption {
+   position: absolute;
+   top: 100px;*/
   top: 200px;
   left: 0;
   bottom: auto;
@@ -252,13 +265,12 @@ body.landing-page {
   text-align: left;
   color: @bluemedio;
 }
-
 .landing-page .carousel-caption.blank {
   top: 140px;
 }
 .landing-page .carousel-image {
   position: absolute;
-  right: 10px;
+  right: 0px;
   top: 150px;
 }
 .landing-page .carousel-indicators {
@@ -268,13 +280,20 @@ body.landing-page {
   font-weight: 700;
   font-size: 38px;
   text-transform: uppercase;
-  text-shadow: none;
+  text-shadow:
+    -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+  -2px 2px 0 #fff,
+  2px 2px 0 #fff;
   letter-spacing: -1.5px;
 }
 .landing-page .carousel-caption p {
   font-weight: 700;
   text-transform: uppercase;
-  text-shadow: none;
+  text-shadow: -2px -2px 0 #fff,
+    2px -2px 0 #fff,
+  -2px 2px 0 #fff,
+  2px 2px 0 #fff;
 }
 .landing-page .caption-link {
   color: #fff;
@@ -384,7 +403,7 @@ body.landing-page {
 .landing-page .testimonials {
   padding-top: 80px;
   padding-bottom: 90px;
-  background-color: @bluemedio;
+  background-color: @blueclaro;
   background-image: url('../img/landing/avatar_all.png');
 }
 .landing-page .big-icon {
