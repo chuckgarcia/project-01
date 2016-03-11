@@ -20,8 +20,8 @@ function config($stateProvider, $urlRouterProvider) {
         })
         .state('inicio', {
             url: "/inicio",
-            templateUrl: "views/landing.html",
-            data: { pageTitle: 'inicio', specialClass: 'landing-page' }
+            templateUrl: "/views/BToB.html",
+            data: { pageTitle: 'inicio', specialClass: 'b-to-b-page' }
         })
 }
 angular
