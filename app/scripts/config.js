@@ -14,14 +14,18 @@ function config($stateProvider, $urlRouterProvider) {
         .state('index', {
             abstract: true,
             url: "/index",
-            controller:MainCtrl,
             templateUrl: "views/common/content.html"
-
         })
-        .state('inicio', {
+        .state('index.main', {
+            url: "/main",
+            templateUrl: "views/main.html",
+            data: { pageTitle: 'Example view' }
+        })
+        .state('landing', {
             url: "/inicio",
-            templateUrl: "/views/BToB.html",
-            data: { pageTitle: 'inicio', specialClass: 'b-to-b-page' }
+            templateUrl: "views/BToB.html",
+            data: { pageTitle: 'inicio', specialClass: 'landing-page' }
+
         })
 }
 angular
