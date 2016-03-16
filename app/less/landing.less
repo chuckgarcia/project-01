@@ -39,6 +39,7 @@ body.landing-page {
   }
   p.text-color {
     color: @text-color;
+    text-align: justify;
   }
   a.navy-link {
     color: @bluemedio;
@@ -261,24 +262,35 @@ body.landing-page {
   .carousel-inner {
     overflow: visible;
   }
-  .carousel-caption {
+  //segundo banner
+  .carousel-caption2 {
     position: absolute;
-    top: 100px;
+    top: 250px;
     left: 0;
     bottom: auto;
     right: auto;
-    text-align: left;
+    color: @blueclaro;
+    text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
+    font-weight: 700;
+    font-size: 18px;
   }
+  .carousel-caption2 h1 {
+    font-weight: 700;
+    font-size: 38px;
+    text-transform: uppercase;
+    letter-spacing: -1.5px;
+  }
+  //banner regular
   .carousel-caption {
     position: absolute;
-    top: 150px;
+    top: 215px;
     left: 0;
     bottom: auto;
     right: auto;
     text-align: left;
     text-shadow: -1px -1px 0 #fff,1px -1px 0 #fff, -1px 1px 0 #fff, 1px 1px 0 #fff;
-    color: @bluemedio;
-  }
+    color: #53354a;
+}
   .carousel-caption.blank {
     top: 140px;
   }
@@ -292,13 +304,13 @@ body.landing-page {
   }
   .carousel-caption h1 {
     font-weight: 700;
-    font-size: 38px;
+    font-size: 48px;
     text-transform: uppercase;
     //text-shadow: none;
     letter-spacing: -1.5px;
   }
   .carousel-caption p {
-    font-weight: 700;
+    font-weight: 900;
     text-transform: uppercase;
     //text-shadow: none;
   }
@@ -487,11 +499,11 @@ body.landing-page {
     color: #fff;
   }
   .btn-primary {
-    background-color: @bluemedio;
-    border-color: @bluemedio;
+    background-color: @blueclaro;
+    border-color: @blueoscuro;
     color: #FFFFFF;
     font-size: 14px;
-    padding: 10px 20px;
+    padding: 4px 8px;
     font-weight: 600;
   }
   .btn-primary:hover,
@@ -585,7 +597,7 @@ body.landing-page {
       color: @text-color;
     }
     .navbar-default .nav li a:hover {
-      color: @bluemedio;
+      color: #676a6c;
     }
     .navbar-wrapper .navbar {
       padding-top: 0;
